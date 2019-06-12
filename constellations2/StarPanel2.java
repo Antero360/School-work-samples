@@ -318,7 +318,7 @@ public class StarPanel2 extends javax.swing.JPanel {
 
         private void readConstellation(String constellationName) {
             try {
-                Scanner file = new Scanner(new File("C:\\Users\\Antero Nevarez-Lira\\Documents\\NetBeansProjects\\Constellations\\src\\constellations\\" + constellationName + ".txt"));
+                Scanner file = new Scanner(new File(constellationName + ".txt"));
                 while (file.hasNextLine()) {
                     String[] starNames = file.nextLine().split(",");
                     starNamePairs.add(starNames);
